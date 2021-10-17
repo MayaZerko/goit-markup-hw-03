@@ -31,6 +31,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+
   outline: 2px solid tomato;
 }
 
@@ -167,6 +170,11 @@ body {
 
 .hidden-title {
   display: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
