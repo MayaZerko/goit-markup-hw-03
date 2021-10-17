@@ -7,11 +7,13 @@
     <title>portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--header-->
     <header>
+        <div class="container border-bottom">
         <nav>
             <a href="./index.html" class="logo">Web<span class="logo-web-dark">Studio</span></a>
     
@@ -26,13 +28,16 @@
             <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
 
     <!--main-->
     <main>
-        <h1>Страница портфолио</h1>
+        
+        <h1 class="hidden-title ">Страница портфолио</h1>
         <section>
-            <h2>Наша работа</h2>
+            <div class="container menu-portfolio">
+            <h2 class="hidden-title ">Наша работа</h2>
             <ul class="list">
                 <li><button type="button" class="button portfolio-button">Все</button></li>
                 <li><button type="button" class="button portfolio-button">Веб-сайты</button></li>
@@ -40,58 +45,63 @@
                 <li><button type="button" class="button portfolio-button">Дизайн</button></li>
                 <li><button type="button" class="button portfolio-button">Маркетинг</button></li>
             </ul>
+            </div>
+            <div class="container">
             <ul class="list">
                 <li> <img src="./image/technokrack.jpg" alt="Картинка технокряк" width="370">
                     <h3 class="section-title portfolio-title">Технокряк</h3>
-                    <p>Веб-сайт</p>
+                    <p class="portfolio-text">Веб-сайт</p>
                 </li>
                 <li> <img src="./image/poster.jpg" alt="картинка постер" width="370">
                     <h3 class="section-title portfolio-title">Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
+                    <p class="portfolio-text">Дизайн</p>
                 </li>
                  <li> <img src="./image/restaurant.jpg" alt="картинка постер ресторана" width="370">
                      <h3 class="section-title portfolio-title">Ресторан Seafood</h3>
-                     <p>Приложение</p>
+                     <p class="portfolio-text">Приложение</p>
                  </li>
                 <li> <img src="./image/headphones.jpg" alt="картинка наушники" width="370">
                     <h3 class="section-title portfolio-title">Проект Prime</h3>
-                     <p>Маркетинг</p>
+                     <p class="portfolio-text">Маркетинг</p>
                  </li>
                 <li> <img src="./image/projectbox.jpg" alt="картинка коробки" width="370">
                      <h3 class="section-title portfolio-title">Проект Boxes</h3>
-                     <p>Приложение</p>
+                     <p class="portfolio-text">Приложение</p>
                  </li>
                 <li> <img src="./image/monitor.jpg" alt="картинка монитор" width="370">
                     <h3 class="section-title portfolio-title">Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+                    <p class="portfolio-text">Веб-сайт</p>
                 </li>
                 <li> <img src="./image/book.jpg" alt="картинка открытая книга" width="370">
                     <h3 class="section-title portfolio-title">Издание Limited Edition</h3>
-                    <p>Дизайн</p>
+                    <p class="portfolio-text">Дизайн</p>
                 </li>
                 <li> <img src="./image/LAB.jpg" alt="картинка бирка" width="370">
                     <h3 class="section-title portfolio-title">Проект LAB</h3>
-                    <p>Маркетинг</p>
+                    <p class="portfolio-text">Маркетинг</p>
                 </li>
                 <li> <img src="./image/notebook.jpg" alt="картинка ноутбук" width="370">
                     <h3 class="section-title portfolio-title">Growing Business</h3>
-                     <p>Приложение</p>
+                     <p class="portfolio-text">Приложение</p>
                 </li>
 
             </ul>
+            </div>
         </section>
     </main>
    
     <!--footer-->
     <footer class="footer-section">
-        <a href="./index.html" class="logo">Web<span class="logo-web-light">Studio</span></a>
+        <div class="container">
+            <a href="./index.html" class="logo">Web<span class="logo-web-light">Studio</span></a>
     
-        <address class="address-footer contact-nav">
-            <span class="address">г. Киев, пр-т Леси Украинки, 26 </span><br />
-            <a href="mailto:info@example.com" class="contact-link">info@example.com</a> <br />
-            <a href="tel:+380991111111" class="contact-link">+38 099 111 11 11</a>
+            <address class="address-footer contact-nav">
+                <span class="address">г. Киев, пр-т Леси Украинки, 26 </span><br />
+                <a href="mailto:info@example.com" class="contact-link">info@example.com</a> <br />
+                <a href="tel:+380991111111" class="contact-link">+38 099 111 11 11</a>
     
-        </address>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

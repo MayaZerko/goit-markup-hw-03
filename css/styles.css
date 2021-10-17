@@ -27,7 +27,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -55,15 +65,24 @@ body {
 /*button*/
 
 .button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  text-align: center;
 
   cursor: pointer;
 }
 .button.primary {
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -114,12 +133,25 @@ body {
   color: var(--accent-color);
 }
 
+.container .border-bottom {
+  border-bottom: 1px solid #ececec;
+}
+
 /*hero*/
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-backgroud-color);
+  text-align: center;
 }
 .title-hero {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -127,11 +159,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  outline: 2px solid tomato;
 }
 
 /*section*/
 
+.hidden-title {
+  display: none;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700px;
   font-size: 36px;
@@ -139,6 +180,8 @@ body {
 }
 
 .portfolio-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -148,6 +191,8 @@ body {
 
 .company-ideal .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 700px;
   font-size: 14px;
@@ -155,6 +200,7 @@ body {
   text-transform: uppercase;
 }
 .company-ideal .text {
+  margin: 0;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -166,6 +212,9 @@ body {
 }
 
 .team-list .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -173,8 +222,24 @@ body {
 }
 
 .team-list .text {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.18;
+}
+
+.team-list .cards {
+  padding-bottom: 30px;
+}
+
+/*portfolio section*/
+.menu-portfolio {
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+}
+
+.portfolio-text {
+  margin: 0;
 }
 
 /*footer*/
