@@ -48,6 +48,17 @@ body {
   color: inherit;
 }
 
+/*section*/
+
+.hidden-title {
+  display: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*logo*/
 
 .logo {
@@ -102,9 +113,29 @@ body {
   background-color: var(--accent-color);
 }
 
+/*main-nav*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /*site nav*/
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .site-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -123,7 +154,19 @@ body {
   color: var(--accent-color);
 }
 
+/*contact nav*/
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav .site-item + .site-item {
+  margin-left: 50px;
+}
+
 .contact-nav .contact-link {
+  margin: 0;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -164,17 +207,6 @@ body {
   text-transform: uppercase;
 
   outline: 2px solid tomato;
-}
-
-/*section*/
-
-.hidden-title {
-  display: none;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section-title {
